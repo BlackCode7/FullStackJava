@@ -2,14 +2,14 @@ package celular;
 
 public class FullStackJavaCelular {
 	
-	String marca;
-	boolean acessoInternet;
-	boolean processador;
-	boolean capaProtecao;
-	String codigoSeguranca;
-	String dispositivoSom;
-	boolean possuiLanterna;
-	boolean modoAviao;
+	public String marca;
+	public boolean acessoInternet;
+	public boolean processador;
+	public boolean capaProtecao;
+	public String codigoSeguranca;
+	public String dispositivoSom;
+	public boolean possuiLanterna;
+	public boolean modoAviao;
 	public FullStackJavaCelular(String marca, boolean acessoInternet, boolean processador, boolean capaProtecao,
 			String codigoSeguranca, String dispositivoSom, boolean possuiLanterna, boolean modoAviao) {
 		super();

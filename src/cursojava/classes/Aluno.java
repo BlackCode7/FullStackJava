@@ -2,16 +2,17 @@ package cursojava.classes;
 
 public class Aluno {
 	
-	String nome;
-	int idade;
-	String dataNascimento;
-	String registrogeral;
-	String numeroCPF;
-	String nomeMae;
-	String nomePai;
-	String datamatricula;
-	String nomeEscola;
-	String seriematriculado;		
+	/* Esses valores aqui são os atributo do objeto */
+	public String nome;
+	public int idade;
+	public String dataNascimento;
+	public String registrogeral;
+	public String numeroCPF;
+	public String nomeMae;
+	public String nomePai;
+	public String datamatricula;
+	public String nomeEscola;
+	public String seriematriculado;		
 	
 	public Aluno(){}
 	public Aluno(String nomePadrao, int idadePadrao, String dataNascPadrao){

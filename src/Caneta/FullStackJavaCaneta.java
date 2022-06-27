@@ -2,10 +2,10 @@ package Caneta;
 
 public class FullStackJavaCaneta {
 	
-	String marcaCaneta;
-	boolean pontaFina;
-	boolean clipePrendedor;
-	String cor;
+	public String marcaCaneta;
+	public boolean pontaFina;
+	public boolean clipePrendedor;
+	public String cor;
 	public FullStackJavaCaneta(String marcaCaneta, boolean pontaFina, boolean clipePrendedor, String cor) {
 		super();
 		this.marcaCaneta = marcaCaneta;

@@ -2,10 +2,10 @@ package Moto;
 
 public class FullStackJavaMoto {
 	
-	String marcamoto;
-	int capacidadeCombustivel;
-	int quantidadeAcentos;
-	int velocidade;
+	public String marcamoto;
+	public int capacidadeCombustivel;
+	public int quantidadeAcentos;
+	public int velocidade;
 	public FullStackJavaMoto(String marcamoto, int capacidadeCombustivel, int quantidadeAcentos, int velocidade) {
 		super();
 		this.marcamoto = marcamoto;

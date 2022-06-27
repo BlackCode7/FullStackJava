@@ -2,10 +2,10 @@ package Mesa;
 
 public class FullStackJavaMesa {
 	
-	String marca;
-	int medidas;
-	int numAcentos;
-	String tipomaterial;
+	public String marca;
+	public int medidas;
+	public int numAcentos;
+	public String tipomaterial;
 	public FullStackJavaMesa(String marca, int medidas, int numAcentos, String tipomaterial) {
 		super();
 		this.marca = marca;

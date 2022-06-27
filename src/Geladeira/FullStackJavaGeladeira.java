@@ -2,10 +2,10 @@ package Geladeira;
 
 public class FullStackJavaGeladeira {
 	
-	String marca;
-	int capacidadeArmazenamento;
-	int voltagem;
-	int divisaoCompartimento;
+	public String marca;
+	public int capacidadeArmazenamento;
+	public int voltagem;
+	public int divisaoCompartimento;
 	public FullStackJavaGeladeira(String marca, int capacidadeArmazenamento, int voltagem, int divisaoCompartimento) {
 		super();
 		this.marca = marca;

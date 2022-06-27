@@ -2,10 +2,10 @@ package Aviao;
 
 public class FullStackJavaAviao {
 	
-	int quantidadeCombustivel;
-	int quantidadeAcentos;
-	boolean servicoBordo;
-	String itinerarioDeVoo;
+	public int quantidadeCombustivel;
+	public int quantidadeAcentos;
+	public boolean servicoBordo;
+	public String itinerarioDeVoo;
 	public FullStackJavaAviao(int quantidadeCombustivel, int quantidadeAcentos, boolean servicoBordo,
 			String itinerarioDeVoo) {
 		super();

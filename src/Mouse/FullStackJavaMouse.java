@@ -2,10 +2,10 @@ package Mouse;
 
 public class FullStackJavaMouse {
 	
-	String marcaMouse;
-	boolean analogico;
-	boolean luminoso;
-	boolean scrow;
+	public String marcaMouse;
+	public boolean analogico;
+	public boolean luminoso;
+	public boolean scrow;
 	
 	public FullStackJavaMouse(String marcaMouse, boolean analogico, boolean luminoso, boolean scrow) {
 		super();

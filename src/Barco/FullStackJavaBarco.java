@@ -2,10 +2,10 @@ package Barco;
 
 public class FullStackJavaBarco {
 	
-	String tipoBarco;
-	int quantidadeTripulantes;
-	int quantidadeAcentos;
-	int velocidade;
+	public String tipoBarco;
+	public int quantidadeTripulantes;
+	public int quantidadeAcentos;
+	public int velocidade;
 	public FullStackJavaBarco(String tipoBarco, int quantidadeTripulantes, int quantidadeAcentos, int velocidade) {
 		super();
 		this.tipoBarco = tipoBarco;

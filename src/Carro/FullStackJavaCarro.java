@@ -2,11 +2,11 @@ package Carro;
 
 public class FullStackJavaCarro {
 	
-	String cor;
-	int assentos;
-	int velocidade;
-	boolean importado;
-	double valor;
+	public String cor;
+	public int assentos;
+	public int velocidade;
+	public boolean importado;
+	public double valor;
 	public FullStackJavaCarro(String cor, int assentos, int velocidade, boolean importado, double valor) {
 		super();
 		this.cor = cor;
