@@ -8,18 +8,20 @@ public class Execucao {
 
 	public static void main(String[] args) {
 		
-		/* Instânciando um objeto aluno */
+		/* Instânciando um objeto aluno na memória ( criação de objetos com new Aluno() ) */
+		/* aluno1 é uma variável que faz referência ao objeto new Aluno() */
 		Aluno aluno1 = new Aluno();
 		aluno1.getClass();
-
 		Aluno aluno2 = new Aluno();
-		aluno1.getClass();
-		
+		aluno1.getClass();		
 		Aluno aluno3 = new Aluno( "Carlos", 32, "20-02-1980" );
-		aluno1.getClass();
-		
+		aluno1.getClass();		
 		Aluno aluno4 = new Aluno( "Anderson", 12, "12-12-2010", "", "8878777887-9", "Maria", "Carlos", "20-10-2015", "SantaTereza", "1121254" );
 		aluno1.getClass();
+		
+		
+		
+		
 		
 	}
 
