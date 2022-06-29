@@ -7,6 +7,7 @@ public class FullStackJavaCarro {
 	public int velocidade;
 	public boolean importado;
 	public double valor;
+	
 	public FullStackJavaCarro(String cor, int assentos, int velocidade, boolean importado, double valor) {
 		super();
 		this.cor = cor;
