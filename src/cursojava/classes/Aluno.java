@@ -122,6 +122,15 @@ public class Aluno {
 		this.bota4 = bota4;
 	}
 
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registrogeral="
+				+ registrogeral + ", numeroCPF=" + numeroCPF + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
+				+ ", datamatricula=" + datamatricula + ", nomeEscola=" + nomeEscola + ", seriematriculado="
+				+ seriematriculado + ", bota1=" + bota1 + ", bota2=" + bota2 + ", bota3=" + bota3 + ", bota4=" + bota4
+				+ "]";
+	}
+	
 	/* Métodos de calculo de médias */
 	public double getMedianota() {
 		return (bota1 + bota2 + bota3 + bota4)/4;
