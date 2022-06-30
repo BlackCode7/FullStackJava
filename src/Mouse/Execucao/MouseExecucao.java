@@ -7,7 +7,8 @@ import cursojava.classes.Aluno;
 
 public class MouseExecucao {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
+		
 		/* FullStackJavaMoto */
 		FullStackJavaMoto moto = new FullStackJavaMoto();
 		moto.setMarcamoto("Ducati");
@@ -36,6 +37,7 @@ public class MouseExecucao {
 		System.out.println("idade do aluno1: " + aluno1.getIdade());
 		System.out.println("data nascimento aluno1: " + aluno1.getDataNascimento());
 		System.out.println("Média do Aluno1 : " + aluno1.getMedianota());
+		System.out.println("Resultado : " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 		
 		
 		System.out.println();				

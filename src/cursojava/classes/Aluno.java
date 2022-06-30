@@ -126,5 +126,35 @@ public class Aluno {
 	public double getMedianota() {
 		return (bota1 + bota2 + bota3 + bota4)/4;
 	}
+	
+	/* Método para cálculo de aluno aprovado */
+	public boolean getAlunoAprovado() {
+		double media = this.getMedianota();
+		if(media >= 70) {
+			return true;
+		}else {
+			return false;
+		}		
+	}
+	
+	/* Método para cálculo de aluno aprovado */
+	public String getAlunoAprovado2() {
+		double media = this.getMedianota();
+		if(media >= 70) {
+			return "Aprovado";
+		}else {
+			return "Reprovado";
+		}		
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
