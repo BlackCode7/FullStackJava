@@ -1,5 +1,7 @@
 package cursojava.classes;
 
+import java.util.Objects;
+
 public class Aluno {
 	
 	/* Esses valores aqui são os atributo do objeto */
@@ -129,8 +131,25 @@ public class Aluno {
 				+ ", datamatricula=" + datamatricula + ", nomeEscola=" + nomeEscola + ", seriematriculado="
 				+ seriematriculado + ", bota1=" + bota1 + ", bota2=" + bota2 + ", bota3=" + bota3 + ", bota4=" + bota4
 				+ "]";
-	}
+	}	
 	
+	@Override
+	public int hashCode() {
+		return Objects.hash(datamatricula, nome, numeroCPF, registrogeral, seriematriculado);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(datamatricula, other.datamatricula) && Objects.equals(nome, other.nome)
+				&& Objects.equals(numeroCPF, other.numeroCPF) && Objects.equals(registrogeral, other.registrogeral)
+				&& Objects.equals(seriematriculado, other.seriematriculado);
+	}
 	/* Métodos de calculo de médias */
 	public double getMedianota() {
 		return (bota1 + bota2 + bota3 + bota4)/4;

@@ -13,7 +13,7 @@ public class MouseExecucao {
 	
 		
 		/*nome idade dataNascimento*/
-		String nome = JOptionPane.showInputDialog("Qual o nome no aluno? ");
+		/*String nome = JOptionPane.showInputDialog("Qual o nome no aluno? ");
 		String idade = JOptionPane.showInputDialog("Qual a idade do aluno? ");
 		String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento? ");
 		String bota1 = JOptionPane.showInputDialog("Digite nota 1? ");
@@ -27,7 +27,7 @@ public class MouseExecucao {
 		aluno1.setIdade(Integer.valueOf(idade)); // convertendo string para inteiro
 		aluno1.setDataNascimento(dataNascimento);
 		/* Chamando o método de calculo do aluno */
-		aluno1.setBota1(Double.valueOf(bota1));
+		/*aluno1.setBota1(Double.valueOf(bota1));
 		aluno1.setBota2(Double.valueOf(bota2));
 		aluno1.setBota3(Double.valueOf(bota3));
 		aluno1.setBota4(Double.valueOf(bota4));
@@ -37,12 +37,12 @@ public class MouseExecucao {
 		System.out.println("idade do aluno1: " + aluno1.getIdade());
 		System.out.println("data nascimento aluno1: " + aluno1.getDataNascimento());
 		System.out.println("Média do Aluno1 : " + aluno1.getMedianota());
-		System.out.println("Resultado : " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));	
+		System.out.println("Resultado : " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));	*/
 		
-		/* Uso do toString() para facilitar a saída de dados */
+		/* Uso do toString() para facilitar a saída de dados 
 		System.out.println( aluno1.toString() + " Numeração do objeto na memória ( 3c22fc4c )" ); // tostring() mostra a numeração do objeto na memória
 		System.out.println( "Média do Aluno: " + aluno1.getMedianota() );
-		System.out.println( "Resultado = " + aluno1.getAlunoAprovado() );
+		System.out.println( "Resultado = " + aluno1.getAlunoAprovado() );*/
 		
 		
 		/* FullStackJavaMoto 
@@ -86,7 +86,18 @@ public class MouseExecucao {
 		
 		System.out.println("Nome da marca de maouse : " + mouse.getMarcaMouse());*/
 		
+		/* Equals() and hasCode() usado para diferenciar um objetos de outro objeto */
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Anderson");
 		
+		Aluno aluno2 = new Aluno();
+		aluno1.setNome("Anderson");
+		
+		if ( aluno1.equals(aluno2) ) {
+			System.out.println(" Alunos são iguais ");
+		}else {
+			System.out.println("Alunos diferentes");
+		}
 
 	}
 
