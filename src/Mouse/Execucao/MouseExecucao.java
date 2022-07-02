@@ -39,7 +39,7 @@ public class MouseExecucao {
 		System.out.println("Média do Aluno1 : " + aluno1.getMedianota());
 		System.out.println("Resultado : " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));	
 		
-		/* Uso do toString() para facilitar a saída de dados 
+		/* Uso do toString() para facilitar a saída de dados */
 		System.out.println( aluno1.toString() + " Numeração do objeto na memória ( 3c22fc4c )" ); // tostring() mostra a numeração do objeto na memória
 		System.out.println( "Média do Aluno: " + aluno1.getMedianota() );
 		System.out.println( "Resultado = " + aluno1.getAlunoAprovado() );
