@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Produto {
 
-	private int id;
+	private Integer id;
 	private String nomeproduto;
 
 	public Produto(int id, String nomeproduto) {

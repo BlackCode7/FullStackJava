@@ -9,17 +9,15 @@ public class Execute_ClienteNewKnoledge {
 		String nome = JOptionPane.showInputDialog("Qual o nome do cliente? ");
 		String idade = JOptionPane.showInputDialog("Qual a idade do cliente? ");
 		String endereco = JOptionPane.showInputDialog("Qual o endereço do cliente? ");
-		//String produtoA = JOptionPane.showInputDialog("Nome produto? ");
-		//String produtoAID = JOptionPane.showInputDialog("Nome produto? ");
 				
 		ClienteNewKnoledge cliente1 = new ClienteNewKnoledge();
 		cliente1.setNome(nome);		
 		cliente1.setIdade(Integer.valueOf(idade));
 		cliente1.setEndereco(endereco);		
 	
-		for( int pos = 1; pos <= 4; pos++) {
+		for( int pos = 1; pos <= 10; pos++) {
 			String nomeProduto = JOptionPane.showInputDialog("Nome do produto "+ pos +" ?");
-			String idProduto = JOptionPane.showInputDialog("Nome do produto "+ pos +" ?");
+			String idProduto = JOptionPane.showInputDialog("Nome do produto "+ pos +" ?");			
 			
 			Produto produto = new Produto();
 			produto.setNomeproduto(nomeProduto);
