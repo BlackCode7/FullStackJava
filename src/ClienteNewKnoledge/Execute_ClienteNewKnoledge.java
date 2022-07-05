@@ -21,12 +21,27 @@ public class Execute_ClienteNewKnoledge {
 			
 			Produto produto = new Produto();
 			produto.setNomeproduto(nomeProduto);
-			produto.setId(Integer.valueOf(idProduto));
+			produto.setId(Integer.valueOf(idProduto).intValue());
 			
 			cliente1.getProdutos().add(produto);
 			
 		}
 		
+		/* Deletando um registro */
+		int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover algum cliente?");
+		if (escolha == 0) {
+			String disciplinaRemover = JOptionPane.showInputDialog("Qual produto deseja remolver 1, 2, 3");
+			cliente1.getProdutos().remove(Integer.valueOf(disciplinaRemover).intValue() -1 );
+		}
+	
+		
+		
+		
+		/*int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover algum produto? ");
+		if( escolha == 0) {
+			String disciplinaRemover = JOptionPane.showInputDialog("Qual o produto 1, 2, 3, 4?");
+			cliente1.getProdutos().remove(Integer.valueOf(disciplinaRemover).intValue());
+		}*/
 	
 		
 		System.out.println("Resultados de clientes: " + cliente1);
