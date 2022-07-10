@@ -66,11 +66,7 @@ public class MouseExecucao {
 		System.out.println("Media do Aluno: " + aluno1.getMedianota());
 		System.out.println("Resultado das provas: " + aluno1.getAlunoAprovado());
 		
-		
-		
-		//
-		
-		
+	
 		/* Equals() and hasCode() usado para diferenciar um objetos de outro objeto */
 		Aluno aluno3 = new Aluno();
 		aluno3.setNome("Anderson");
