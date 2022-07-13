@@ -1,24 +1,29 @@
 package TesteClassFormatMoney;
 
-import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Locale;
 
 class TesteClassFormatMoney {
 	
-	static double money = 70.27;
+	static String simbolPT = "pt";
+	static String simbolUS = "en";
+	static double money = 707755458.27;
+	
+	static Locale localeUs = new Locale("en", "UK");
+	static Locale localeBR = new Locale("pt", "BR");
+	NumberFormat numberUS = NumberFormat.getCurrencyInstance(localeUs);
+	NumberFormat numberPT = NumberFormat.getCurrencyInstance(localeBR);
 
 	public static void main(String[] args) {
 		//System.out.println( format(money) );
-		System.out.println( formatNumberPathPTBR(money) );
+		System.out.println( formatNumberPathPT_US(simbolPT, money) );
 	}
 	
-	 public static String formatNumberPathPTBR(double value) {
-        DecimalFormat formatter;
-        if (value<=99999)
-          formatter = new DecimalFormat("###,###,##0.00");
-        else
-            formatter = new DecimalFormat("#,##,##,###.00");
-        return formatter.format(value);
+	 public static double formatNumberPathPT_US(String simbol , double money2) {
+		double formatter = money2;
+		
+		
+		return formatter;
     }
 
 	 

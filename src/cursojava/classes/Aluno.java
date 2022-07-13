@@ -201,8 +201,12 @@ public class Aluno {
 	/* Método para cálculo de aluno aprovado */
 	public String getAlunoAprovado2() {
 		double media = this.getMedianota();
-		if (media >= 70) {
-			return "Aprovado";
+		if (media >= 50) {
+			if( media >= 70) {
+				return "Aluno aprovado";
+			} else {
+				return "Aluno em recuperação";
+			}
 		} else {
 			return "Reprovado";
 		}
