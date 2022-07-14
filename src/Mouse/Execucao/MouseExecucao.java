@@ -35,6 +35,23 @@ public class MouseExecucao {
 			alunos.add(aluno1);
 		}
 		
+		/* Percorrendo lista pelas posições */
+		for( int pos=0; pos < alunos.size(); pos++ ) {
+			Aluno aluno = alunos.get(pos);
+			System.out.println("aluno " + aluno.getNome());
+			System.out.println("Media do aluno " + aluno.getMedianota());
+			System.out.println("Aluno aprovado ou não " + aluno.getAlunoAprovado2());
+			System.out.println("-------------------------------------------------------");
+			
+			/* Percorrendo as disciplinas pelas posições das listas associadas ao aluno */
+			for ( int posdis=0; posdis < aluno.getDisciplinas().size(); posdis++ ) {
+				Disciplina disc = aluno.getDisciplinas().get(posdis);
+				System.out.println( "Materia = " + disc.getDisciplina1() + " Nota =  " + disc.getNota1());
+			}
+			
+		}
+		
+		
 		/* Pegando Alunos com disciplinas relacionadas usando for(){} / */
 		for( Aluno aluno: alunos ) {
 			System.out.println(aluno);
