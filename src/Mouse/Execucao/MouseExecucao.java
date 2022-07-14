@@ -11,38 +11,72 @@ import cursojava.classes.Disciplina;
 public class MouseExecucao {
 
 	public static void main(String[] args) {
-		
+
 		/* Percorrendo o nome do aluno */
 		List<Aluno> alunos = new ArrayList<Aluno>();
-		for( int qtd = 1; qtd <= 2; qtd++ ) {
-			
-			String nome = JOptionPane.showInputDialog("Qual o nome do aluno" + qtd + "? ");		
+
+		for (int qtd = 1; qtd <= 4; qtd++) {
+
+			String nome = JOptionPane.showInputDialog("Qual o nome do aluno" + qtd + "? ");
 			Aluno aluno1 = new Aluno();
 			aluno1.setNome(nome);
 			int escolha = JOptionPane.showConfirmDialog(null, " Qual disciplina deseja remover? ");
-			if( escolha == 0 ) {			
+			if (escolha == 0) {
 				int continuarRemover = 0;
-				int posicao = 1;			
+				int posicao = 1;
 				/* Using While */
-				while( continuarRemover == 0 ) {
+				while (continuarRemover == 0) {
 					String disciplinaRemover = JOptionPane.showInputDialog(null, " qual disciplina 1, 2, 3 ou 4? ");
-					aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);				
-					posicao ++;
+					aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);
+					posicao++;
 					continuarRemover = JOptionPane.showConfirmDialog(null, " Continuar a remover? ");
-				}			
-			}			
-			alunos.add(aluno1);			
-		}		
+				}
+			}
+			alunos.add(aluno1);
+		}
 		
-		/* Percorrendo a lista de alunos */
-		for (Aluno aluno : alunos) {			
+		/* Pegando Alunos com disciplinas relacionadas usando for(){} / */
+		for( Aluno aluno: alunos ) {
 			System.out.println(aluno);
-			System.out.println("Média Aluno: " + aluno.getMedianota() );
-			System.out.println("Resultado aluno: " + aluno.getAlunoAprovado() );
+			System.out.println("Média Aluno: " + aluno.getMedianota());
+			System.out.println("Resultado aluno: " + aluno.getAlunoAprovado());
 			System.out.println("#####################################################################");
+			for( Disciplina disciplina: aluno.getDisciplinas()){
+				System.out.println( disciplina.getDisciplina1() );
+			}
+		}
+		
+		/* Procurando e removendo um aluno da lista */
+		for ( Aluno aluno: alunos ) {
+			if(aluno.getNome().equalsIgnoreCase("Anderson")) {
+				alunos.remove(aluno);
+				break;
+			}else {				
+				System.out.println(aluno);
+				System.out.println("Média Aluno: " + aluno.getMedianota());
+				System.out.println("Resultado aluno: " + aluno.getAlunoAprovado());
+				System.out.println("#####################################################################");				
+				break;
+			}
 		}
 
+		/* Percorrendo a lista de alunos */ 
+		/*
+		 * for (Aluno aluno : alunos) {
+			if (aluno.getNome().equalsIgnoreCase("Anderson")) {				
+				alunos.remove(aluno);				
+				System.out.println(aluno);
+				System.out.println("Média Aluno: " + aluno.getMedianota());
+				System.out.println("Resultado aluno: " + aluno.getAlunoAprovado());
+				System.out.println("#####################################################################");				
+				break;
+			}
+		}
 		
+		*/
+		
+		
+
 	}
 
 }
