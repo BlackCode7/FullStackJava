@@ -51,6 +51,10 @@ public class MouseExecucao {
 				
 				troca.getDisciplinas().add(disciplina);
 				
+				/* Aqui troca o aluno - pra isso precisa ter a posição do aluno na lista */
+				alunos.set(pos, troca);
+				aluno1 = alunos.get(pos);
+				
 			}
 			
 			Aluno aluno = alunos.get(pos);
