@@ -3,6 +3,8 @@ package cursojava.classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import constantesJava.StatusAluno;
+
 public class Aluno {
 
 	/* Esses valores aqui são os atributo do objeto */
@@ -189,12 +191,12 @@ public class Aluno {
 	}
 
 	/* Método para cálculo de aluno aprovado */
-	public boolean getAlunoAprovado() {
+	public String getAlunoAprovado() {
 		double media = this.getMedianota();
 		if (media >= 70) {
-			return true;
+			return StatusAluno.APROVADO;
 		} else {
-			return false;
+			return StatusAluno.REPROVADO;
 		}
 	}
 
