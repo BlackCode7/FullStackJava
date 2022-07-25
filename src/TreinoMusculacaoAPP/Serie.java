@@ -22,9 +22,14 @@ public class Serie {
 	public String toString() {
 		return "Serie [idSerie=" + idSerie +  ", nomeSerie=" + nomeSerie + "]";
 	}
-	public Long getIdSerie() {
+	
+	
+	/* Trabalhando com listas */
+	public Long getIdSerie() {			
 		return idSerie;
 	}
+	
+	
 	public void setIdSerie(Long idSerie) {
 		this.idSerie = idSerie;
 	}

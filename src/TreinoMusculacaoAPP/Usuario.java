@@ -13,12 +13,13 @@ public class Usuario {
 		
 	public List<Serie> getListSerie() {
 		return listSerie;
-	}
+	}	
 	
 	@Override
 	public String toString() {
-		return "Usuario [idUser=" + idUser + ", nomeUser=" + nomeUser + "]";
+		return "Usuario [idUser=" + idUser + ", nomeUser=" + nomeUser + ", listSerie=" + listSerie + "]";
 	}
+
 	public Usuario() {
 		super();
 	}
