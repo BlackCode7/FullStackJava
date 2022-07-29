@@ -14,6 +14,10 @@ public class Pessoa {
 		super();
 	}	
 	
+	public boolean pessoaMaiorIdade() {
+		return idade >= 18;
+	}
+	
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", idade=" + idade + ", dataNascim=" + dataNascim + ", registroGeral="

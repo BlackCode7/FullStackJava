@@ -15,6 +15,14 @@ public class Aluno extends Pessoa{
 				+ ", nomeAluno=" + nomeAluno + ", dataMatricula=" + dataMatricula + ", serieMatriculado="
 				+ serieMatriculado + ", disciplina=" + disciplina + "]";
 	}
+	
+	@Override /* SobreEscreve o método criado na super classe Pessoa() */
+	public boolean pessoaMaiorIdade() {		
+		return super.pessoaMaiorIdade();
+	}
+	public String msgMaoirIdade() {
+		return this.pessoaMaiorIdade()? " Pessoa maior de idade!" : " Pessoa menor de idade! ";
+	}
 
 	public String getNome() {
 		return nome;
