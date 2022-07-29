@@ -70,5 +70,9 @@ public class Secretario extends Pessoa{
 	public void setExperiencia(String experiencia) {
 		this.experiencia = experiencia;
 	}
+	@Override
+	public double salario() {
+		return 1800.00 * 0.9;
+	}
 
 }

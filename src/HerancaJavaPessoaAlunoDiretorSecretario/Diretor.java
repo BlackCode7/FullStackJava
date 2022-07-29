@@ -71,5 +71,9 @@ public class Diretor extends Pessoa {
 	public void setTitulacao(String titulacao) {
 		this.titulacao = titulacao;
 	}
+	@Override
+	public double salario() {
+		return 3500.20;
+	}
 
 }

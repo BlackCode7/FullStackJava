@@ -111,5 +111,10 @@ public class Aluno extends Pessoa{
 	public void setDisciplina(String disciplina) {
 		this.disciplina = disciplina;
 	}
+
+	@Override
+	public double salario() {
+		return 1500.00;
+	}
 	
 }

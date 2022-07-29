@@ -1,6 +1,6 @@
 package HerancaJavaPessoaAlunoDiretorSecretario;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	protected String nome;
 	protected int idade;
@@ -17,6 +17,9 @@ public class Pessoa {
 	public boolean pessoaMaiorIdade() {
 		return idade >= 18;
 	}
+	
+	/* Método abstrato é obrigatório usar em classe filha */
+	public abstract double salario();
 	
 	@Override
 	public String toString() {
