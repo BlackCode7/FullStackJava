@@ -13,7 +13,7 @@ public abstract class Pessoa {
 	public Pessoa() {
 		super();
 	}	
-	
+	 
 	public boolean pessoaMaiorIdade() {
 		return idade >= 18;
 	}

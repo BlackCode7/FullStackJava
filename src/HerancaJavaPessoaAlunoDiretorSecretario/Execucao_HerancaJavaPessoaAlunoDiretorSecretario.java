@@ -31,8 +31,34 @@ public class Execucao_HerancaJavaPessoaAlunoDiretorSecretario {
 		System.out.println("salario diretor: " + diretor.salario());
 		System.out.println("salario Secretário: " + secretario.salario());
 		
+		Pessoa pessoa = new Aluno();
+		pessoa = secretario;
 		
+		teste(aluno);
+		teste(diretor);
+		teste(secretario);
+				
+	}
+	
+	public static void teste(Pessoa pessoa ) {
+		System.out.println("Nome pessoa: " + pessoa.getNome() 
+		+ " Salario " + pessoa.salario() );		
 	}
 
 }
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
