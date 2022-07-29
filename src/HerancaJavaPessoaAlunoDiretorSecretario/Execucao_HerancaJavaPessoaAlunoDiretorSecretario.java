@@ -27,9 +27,9 @@ public class Execucao_HerancaJavaPessoaAlunoDiretorSecretario {
 		System.out.println("Idade Diretor: " + diretor.getIdade()+" maoir idade? "+ diretor.pessoaMaiorIdade());
 		System.out.println("Idade Secretário: " + secretario.getIdade()+" maoir idade? "+ secretario.pessoaMaiorIdade());
 		
-		System.out.println("Idade aluno: " + aluno.salario());
-		System.out.println("Idade diretor: " + diretor.salario());
-		System.out.println("Idade Secretário: " + secretario.salario());
+		System.out.println("salario aluno: " + aluno.salario());
+		System.out.println("salario diretor: " + diretor.salario());
+		System.out.println("salario Secretário: " + secretario.salario());
 		
 		
 	}
