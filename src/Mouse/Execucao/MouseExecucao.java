@@ -86,10 +86,7 @@ public class MouseExecucao {
 						maps.get(StatusAluno.REPROVADO).add(aluno);
 					}
 				}			
-			}
-			
-			
-			
+			}				
 			
 			/* Processando a lista de alunos */
 			for ( Aluno aluno: maps.get(StatusAluno.APROVADO) ) {

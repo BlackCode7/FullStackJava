@@ -1,10 +1,29 @@
 package HerancaJavaPessoaAlunoDiretorSecretario;
 
-public class Secretario extends Pessoa{
+import HerancaJavaPessoaAlunoDiretorSecretario.interfaces.PermitirAcesso;
+
+public class Secretario extends Pessoa implements PermitirAcesso{
 	
 	private int registro;
 	private String nivelCargo;
 	private String experiencia;
+	
+	/* Definindo login e senha para secretário */
+	private String login;
+	private String senha;	
+	
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	
 	@Override
 	public String toString() {
@@ -74,5 +93,22 @@ public class Secretario extends Pessoa{
 	public double salario() {
 		return 1800.00 * 0.9;
 	}
+	
+	@Override
+	public boolean autenticar() {
+		/* testa se login e senha são iguais a admin */
+		return login.equals("admin") && senha.equals("admin");
+		
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
