@@ -3,6 +3,9 @@ package HerancaJavaPessoaAlunoDiretorSecretario.interfaces;
 /* Interface será o contrato de autenticação */
 public interface PermitirAcesso {
 	
-	public boolean autenticar();/* apenas declaração do método */
+	/* Definindo login e senha para secretário */
+	public boolean autenticar(String login, String senha);
+	public boolean autenticar();
+	
 
 }

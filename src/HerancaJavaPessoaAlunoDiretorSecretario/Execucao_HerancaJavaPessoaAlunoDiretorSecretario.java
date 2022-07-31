@@ -2,6 +2,9 @@ package HerancaJavaPessoaAlunoDiretorSecretario;
 
 import javax.swing.JOptionPane;
 
+import HerancaJavaPessoaAlunoDiretorSecretario.classesAuxiliares.FuncaoAutenticacao;
+import HerancaJavaPessoaAlunoDiretorSecretario.interfaces.PermitirAcesso;
+
 public class Execucao_HerancaJavaPessoaAlunoDiretorSecretario {
 
 	public static void main(String[] args) {
@@ -13,11 +16,11 @@ public class Execucao_HerancaJavaPessoaAlunoDiretorSecretario {
 		String login = JOptionPane.showInputDialog("Informe login: ");
 		String senha = JOptionPane.showInputDialog("Informe senha: ");
 		
-		Secretario secretario = new Secretario();
-		secretario.setLogin(login);
-		secretario.setSenha(senha);
+		//FuncaoAutenticacao acess = new FuncaoAutenticacao();
 		
-		if( secretario.autenticar() ) {
+		PermitirAcesso secretario = new Secretario(login, senha);
+		
+		if( secretario.autenticar() ) { 
 			aluno.setNomeAluno("Ander");
 			aluno.setNomeMAE("Maria");
 			aluno.setNomePAI("Adil");
@@ -29,24 +32,24 @@ public class Execucao_HerancaJavaPessoaAlunoDiretorSecretario {
 			diretor.setRegistroGeral("22125");
 			diretor.setIdade(52);
 			
-			secretario.setNome("Andre");
-			secretario.setRegistro(3235545);
-			secretario.setIdade(32);
+			((Secretario) secretario).setNome("Andre");
+			((Secretario) secretario).setRegistro(3235545);
+			((Secretario) secretario).setIdade(32);
 			
 			System.out.println("Idade Aluno: " + aluno.getIdade()+" maoir idade? "+ aluno.msgMaoirIdade());
 			System.out.println("Idade Diretor: " + diretor.getIdade()+" maoir idade? "+ diretor.pessoaMaiorIdade());
-			System.out.println("Idade Secretário: " + secretario.getIdade()+" maoir idade? "+ secretario.pessoaMaiorIdade());
+			System.out.println("Idade Secretário: " + ((Secretario) secretario).getIdade()+" maoir idade? "+ ((Secretario) secretario).pessoaMaiorIdade());
 			
 			System.out.println("salario aluno: " + aluno.salario());
 			System.out.println("salario diretor: " + diretor.salario());
-			System.out.println("salario Secretário: " + secretario.salario());
+			System.out.println("salario Secretário: " + ((Secretario) secretario).salario());
 			
 			Pessoa pessoa = new Aluno();
-			pessoa = secretario;
+			pessoa = (Pessoa) secretario;
 			
 			teste(aluno);
 			teste(diretor);
-			teste(secretario);
+			teste((Pessoa) secretario);
 		}
 		else {
 			System.out.println("Você não tem um login e senha!!!");
