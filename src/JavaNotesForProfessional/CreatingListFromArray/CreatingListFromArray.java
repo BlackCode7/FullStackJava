@@ -16,7 +16,7 @@ public class CreatingListFromArray {
 		String[] stringArray = { "CasaTargeryan", "CasaStark", "CasaLanisters" };
 		List<String> stringList = Arrays.asList(stringArray);
 		
-		if( true ) {
+		if( stringArray.length > 0 ) {
 			
 			for(String list: stringList ) {
 				System.out.println(list);
