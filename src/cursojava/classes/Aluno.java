@@ -182,10 +182,10 @@ public class Aluno {
 	/* Métodos de calculo de médias */
 	public double getMedianota() {
 
-		double somaNotas = 0;
+		double somaNotas = 0.0;
 
 		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota1();
+			somaNotas += disciplina.getMediaNotas();
 		}
 		return somaNotas / disciplinas.size();
 	}

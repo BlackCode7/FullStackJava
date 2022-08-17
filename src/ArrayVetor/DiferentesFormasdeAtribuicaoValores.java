@@ -12,8 +12,7 @@ public class DiferentesFormasdeAtribuicaoValores {
 		valores1[3] = 54.5;
 		valores1[4] = 23.00;
 		valores1[5] = 66.10;
-		valores1[6] = 3444.00;
-		
+		valores1[6] = 3444.00;		
 		
 		double[] valores = { 9.8, 1.6, 34.2 };
 

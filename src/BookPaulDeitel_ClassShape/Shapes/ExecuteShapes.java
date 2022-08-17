@@ -9,6 +9,7 @@ public class ExecuteShapes {
 		
 		String input = JOptionPane.showInputDialog(
 				"Digite 1 para desenhar o retangulo: " +
+				"Digite 2 para desenhar o oval: " +
 				"Digite 2 para desenhar o oval: ");
 		int choice = Integer.parseInt(input); // Converte a entrad a do usuario
 		

@@ -1,17 +1,18 @@
 package cursojava.classes;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Disciplina {
 
-	private double nota1;
+	private double[] nota1 = new double[4];
 	private String disciplina1;
 
-	public double getNota1() {
+	public double[] getNota1() {
 		return nota1;
 	}
 
-	public void setNota1(double nota1) {
+	public void setNota1(double[] nota1) {
 		this.nota1 = nota1;
 	}
 
@@ -23,9 +24,23 @@ public class Disciplina {
 		this.disciplina1 = disciplina1;
 	}
 
+	/* Método que trabalha com arrays */
+	public double getMediaNotas() {		
+		double somaTotal = 0;		
+		for ( int pos = 0; pos<nota1.length; pos++) {
+			somaTotal += nota1[pos];
+		}
+		return somaTotal/4;
+	}
+
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(disciplina1, nota1);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.hashCode(nota1);
+		result = prime * result + Objects.hash(disciplina1);
+		return result;
 	}
 
 	@Override
@@ -37,8 +52,7 @@ public class Disciplina {
 		if (getClass() != obj.getClass())
 			return false;
 		Disciplina other = (Disciplina) obj;
-		return Objects.equals(disciplina1, other.disciplina1)
-				&& Double.doubleToLongBits(nota1) == Double.doubleToLongBits(other.nota1);
+		return Objects.equals(disciplina1, other.disciplina1) && Arrays.equals(nota1, other.nota1);
 	}
 
 	@Override
